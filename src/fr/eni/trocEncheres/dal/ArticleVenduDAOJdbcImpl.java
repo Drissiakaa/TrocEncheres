@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import fr.eni.trocEncheres.BusinessException;
 import fr.eni.trocEncheres.bo.ArticleVendu;
 
 public class ArticleVenduDAOJdbcImpl implements ArticleVenduDAO {

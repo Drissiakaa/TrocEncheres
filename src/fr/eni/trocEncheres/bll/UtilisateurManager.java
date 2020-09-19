@@ -1,7 +1,7 @@
 package fr.eni.trocEncheres.bll;
 
-import fr.eni.trocEncheres.BusinessException;
 import fr.eni.trocEncheres.bo.Utilisateur;
+import fr.eni.trocEncheres.dal.BusinessException;
 import fr.eni.trocEncheres.dal.DAOFactory;
 import fr.eni.trocEncheres.dal.UtilisateurDAO;
 
@@ -16,9 +16,6 @@ public class UtilisateurManager {
 
 	// variable membre (pour accès à la DAL)
 	private UtilisateurDAO utilisateurDAO;
-	
-	
-	
 
 	// CONSTRUCTEUR
 	public UtilisateurManager() {
@@ -27,10 +24,9 @@ public class UtilisateurManager {
 	}
 
 	// pour recupérer le mot de passe en base de données
-	public Utilisateur LireUtilisateur(String pseudo ) throws BusinessException {
-		return  utilisateurDAO.LireUtilisateur(pseudo);
+	public Utilisateur LireUtilisateur(String pseudo) throws BusinessException {
+		return utilisateurDAO.LireUtilisateur(pseudo);
 
-		
 	}
 
 	public Utilisateur Insert(String pseudo, String prenom, String email, String telephone, String rue, int codePostal,
@@ -45,8 +41,6 @@ public class UtilisateurManager {
 		return null;
 	}
 
-	
-	
-	
-	//public void  Insert(pseudo, prenom, email, telephone, rue, codePostal, ville, motDePasse,credit, administrateur ) throws BusinessException {};
+	// public void Insert(pseudo, prenom, email, telephone, rue, codePostal, ville,
+	// motDePasse,credit, administrateur ) throws BusinessException {};
 }

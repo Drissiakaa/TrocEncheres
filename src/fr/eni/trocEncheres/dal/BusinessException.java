@@ -1,4 +1,4 @@
-
+package fr.eni.trocEncheres.dal;
 
 public class BusinessException extends Exception {
 
