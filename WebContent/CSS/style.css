@@ -1,0 +1,126 @@
+body {
+        background-color: whitesmoke;
+        
+        padding-left:1%;
+        padding-right:1%;
+         width:100%;    
+         height: auto;
+         background-attachment: scroll;
+        
+
+}
+
+
+header {
+    background-color: darkseagreen;
+    height: 10%;
+    width: 100%;
+    color: aliceblue;    
+    top: 0%;
+    
+   
+
+    
+}
+
+
+
+
+h1 {
+
+    text-align: center;
+
+}
+
+h2{
+    
+   text-align: center; 
+}
+
+
+
+
+
+
+.resultatRecherche{
+	width : 95%;
+	heigth : auto;
+	margin-top : 3%;
+    display: flex;
+    
+    justify-content:space-around;
+}
+
+footer {
+
+    background-color: darkseagreen;
+    text-align:center;
+    font-size:0.80rem;
+    dispay:flex;
+    align-items: stretch;
+    height: 6%;
+    width: 100%;
+    color: aliceblue;     
+    bottom: 0%;
+   
+    
+}
+.form {
+	
+	 width: 50%;
+     height: auto;	 
+	 border : solid, grey , 2px;
+	 padding-left:3%;
+	 margin-left:auto;
+	 margin-right:auto;		 
+	 margin-bottom:5%;
+	 padding-top:2%;
+	 padding-bottom:3%;
+     border-radius:10px ;
+     box-shadow: 0 15px 25px grey ;
+     
+     
+    	
+}
+
+#entete2{
+	
+	 background-color: darkseagreen;
+    height: 3%;
+    width: 100%;
+    color: aliceblue;
+        top: 0%;
+        padding-bottom:1%;
+    margin-bottom:1%;
+   
+    
+   
+	
+	
+	
+}
+
+
+
+
+a:hover {
+    color: aliceblue;
+}
+#presentationAsso{
+	
+	margin-left:15%;
+	margin-right:15%;
+	margin-top : 3%;
+	text-align:justify;
+	font-size:1.3em;
+
+	
+	
+	
+}
+.retour{
+	
+	 text-align:center;
+	
+	
+}
