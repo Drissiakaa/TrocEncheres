@@ -12,7 +12,7 @@
 <h2 style="text-align: center">Nouvelle Vente</h2><br><br>
 
 <div class="form">
-<form action="<%=request.getContextPath() %>/PageNouvelleVente" method="post">
+<form action="<%=request.getContextPath() %>/PageArticleVendu" method="post">
 
 
 
