@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import fr.eni.trocEncheres.bll.ObjetManager;
+
 /**
  * Servlet implementation class PageNouvelleVente
  */
@@ -67,5 +69,7 @@ public class PageNouvelleVente extends HttpServlet {
 		int prixVente = Integer.parseInt(request.getParameter("prixVente"));
 		int etatVente = Integer.parseInt(request.getParameter("etatVente"));
 	}
+
+	ObjetManager om = new ObjetManager();
 
 }

@@ -1,9 +1,11 @@
 package fr.eni.trocEncheres.dal;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import fr.eni.trocEncheres.bll.ObjetManager;
 import fr.eni.trocEncheres.bo.ArticleVendu;
 
 public class ArticleVenduDAOJdbcImpl implements ArticleVenduDAO {
@@ -46,6 +48,66 @@ public class ArticleVenduDAOJdbcImpl implements ArticleVenduDAO {
 			}
 			throw businessException;
 		}
+	}
+
+	@Override
+	public void select(int noArticle) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(int noArticle) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public ObjetManager lireNomArticle(String nomArticle) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ObjetManager lireNoArticle(int noArticle) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ObjetManager lireDescription(String description) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ObjetManager lireDateDebutEncheres(Date dateDebutEncheres) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ObjetManager lireDateFinEncheres(Date dateFinEncheres) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ObjetManager lireMiseAPrix(int miseAPrix) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ObjetManager lirePrixVente(int prixVente) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ObjetManager lireEtatVente(int etatVente) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
