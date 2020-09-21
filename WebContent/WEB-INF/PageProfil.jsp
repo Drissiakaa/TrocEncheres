@@ -5,15 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<title>Profil utilisateur</title>
+<title>Profil Vendeur</title>
 </head>
 <body>
 <%@ include file="entete2.html"  %>
 
-
+<!-- affichage profil du vendeur -->
 <div class="form">
 
- <form action ="/PageConnexionUser" method ="post">
+ <form  method ="get">
  
   <div class="form-group row">
     <label  class="col-sm-1 col-form-label">Pseudo : </label>
@@ -80,26 +80,16 @@
   
   
   
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Se souvenir de moi
-        </label>
-      </div>
-    </div>
-  </div>
+ 
   
   <div class="form-group row">
     <div class="col-sm-10">
-     <button type="submit" class="btn btn-primary btn-lg" onclick="<%=request.getContextPath()%>/PageConnexionUser">Se connecter</button>
+    
     </div>
   </div>
 
 
 
-<input type="button" name="modifier_profil" value="modifier_profil" title="modifier_profil">
 
 <p class="retour"><a href=" <%=request.getContextPath()%>/PageAcceuilModeDeconnect">Retour à l'accueil</a></p>
 

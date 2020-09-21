@@ -25,11 +25,11 @@ public class PageInscriptionUtilisateur extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+	
 		
-		
-		//this.getServletContext().getRequestDispatcher("/WEB-INF/PageInscription.jsp").forward(request, response);
-		
+		//this.getServletContext().getRequestDispatcher("/WEB-INF/PageCreerCompte.jsp").forward(request, response);
+		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/PageCreerCompte.jsp");
+		rd.forward(request, response);
 	}
 
 	/**
@@ -38,21 +38,23 @@ public class PageInscriptionUtilisateur extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
-		String prenom = request.getParameter("prenom");
 		String nom = request.getParameter("nom");
-		String pseudo = request.getParameter("nom");
-		String ville = request.getParameter("ville");
+				String prenom = request.getParameter("prenom");	
+		String pseudo = request.getParameter("pseudo");
+				String email = request.getParameter("email");
+				String telephone =request.getParameter("telephone");
 		String rue = request.getParameter("rue");
-		String email = request.getParameter("email");
-		String telephone =request.getParameter("telephone");
-		String motDePasse=request.getParameter("motDePasse");
+		String ville = request.getParameter("ville");
 		int codePostal = Integer.parseInt(request.getParameter("codePostal"));		
+		String motDePasse=request.getParameter("motDePasse");
+		
+		
+		
 		
 		try {
 			
 			UtilisateurManager um = new UtilisateurManager();
-			Utilisateur utilisateur=um.Insert(pseudo, prenom, email, telephone, rue, codePostal, ville, motDePasse);
+			um.Insert(nom,prenom, pseudo, email, telephone, rue,ville, codePostal,  motDePasse);
 			
 		} catch (Exception e) {
 			 e.printStackTrace(new java.io.PrintStream("error"));
@@ -62,5 +64,6 @@ public class PageInscriptionUtilisateur extends HttpServlet {
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/PageConnexion.jsp");
 		rd.forward(request, response);
-	}
-}
+	
+	
+}}

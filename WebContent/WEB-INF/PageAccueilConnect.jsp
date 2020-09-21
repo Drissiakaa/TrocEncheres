@@ -16,30 +16,35 @@
 			
 <!-- formulaire -->
 <div class ="form">
-<form name="filtres" action="" method="get">
+<form name="filtres" action="<%=request.getContextPath()%>/ServletReceptionRecherchePageAccueil%>" method="post">
 
 <!-- filtres et liste déroulante catégorie -->
-<div>
+
 	<label>Filtres :</label><br><br>
 	<input type="text" id="filtres" name="filtres" placeholder="Le nom de l'article contient">
 	<br><br>
 	<label>Catégorie : </label>
-	<select>
-		<option>Toutes</option>
-		<option>Informatique</option>
-		<option>Ameublement</option>
-		<option>Vêtement</option>
-		<option>Sport &amp; Loisirs</option>
+	<select property="lechoix">
+		<option value="0">Toutes</option>
+		<option value="1">Informatique</option>
+		<option value="2">Ameublement</option>
+		<option value="3">Vêtement</option>
+		<option value="4">Sport &amp; Loisirs</option>
 	</select> 
 	<input type="submit" name="boutonrechercher" value="rechercher" title="Rechercher">
+
+</form>
+
 </div>
 
-
 <br>
 
 <br>
-<!-- achats / mes ventes -->
+
+
 <div>
+<!--  afficheant les articles disponibles   -->
+
  <input type="radio" id="achat" name="achat" value="achat">
   <label for="achat"><strong>Mes Achats</strong></label><br>
   <input type="checkbox" id="enchères ouvertes" name="enchères ouvertes">
@@ -49,6 +54,10 @@
   <input type="checkbox" id="enchères ouvertes" name="enchères ouvertes">
   <label for="enchères ouvertes">mes enchères remportées</label>
   <br>
+  
+ 
+  <!--    section affichant les ventes de l'utilisateur sur le site -->  
+  
 <input type="radio" id="mes ventes" name="mes ventes" value="mes ventes">
   <label for="achat"><strong>Mes ventes</strong></label><br>
   <input type="checkbox" id="enchères ouvertes" name="enchères ouvertes">
@@ -61,11 +70,9 @@
 
  </div>
       
-  
 
-    <div class="From">
 
-      
+ <div class="From">      
             
             <!-- enchères en cours 1 -->
     <div class="resultatRecherche">
@@ -81,9 +88,10 @@
                     <br><br>
                     Vendeur : 
                 </p>
-                <a href=" <%=request.getContextPath()%>/AffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
+                <a href=" <%=request.getContextPath()%>/PageAffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
             </div>
         </div>
+        
  
 
         <div class="card" style="width: 18rem;">
@@ -97,9 +105,12 @@
                     <br><br>
                     Vendeur : 
                 </p>
-              <a href=" <%=request.getContextPath()%>/AffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
+              <a href=" <%=request.getContextPath()%>/PageAffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
             </div>
         </div>
+        
+        
+        
         <div class="card" style="width: 18rem;">
             <img src="images/matelasUnePersonne.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -111,9 +122,10 @@
                     <br><br>
                     Vendeur : 
                 </p>
-               <a href=" <%=request.getContextPath()%>/AffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
+               <a href=" <%=request.getContextPath()%>/PageAffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
             </div>
         </div>
+ 
  
 
         <div class="card" style="width: 18rem;">
@@ -126,33 +138,17 @@
                     Fin de l'enchère :
                     <br><br>
                 <p>        Vendeur : </p>
-                <a href=" <%=request.getContextPath()%>/AffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
+                <a href=" <%=request.getContextPath()%>/PageAffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
             </div>
         </div>
-    </div>
+        
+        
+    </div>       
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </form>
-    </div>
-    </div>
+      </div>      
+   
+  
+    
     <br>
 
 

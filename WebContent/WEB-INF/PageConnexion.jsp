@@ -24,7 +24,7 @@
 
 <div class="form">
 
- <form action ="/PageConnexionUser" method ="post">
+ <form action ="<%=request.getContextPath()%>/PageConnexionUser" method ="post">
  
   <div class="form-group row">
     <label for="login" class="col-sm-1 col-form-label"> Pseudo  </label>
@@ -61,7 +61,7 @@
   </div>
    <p><a href=" <%=request.getContextPath()%>/ServletTraitementMotDePasseOublié">Mot de passe oublié</a></p>
   <br>
-       <p class="retour"><a href=" <%=request.getContextPath()%>/PageAccueilDeconnect">Retour à l'accueil</a></p>
+       <p class="retour"><a href=" <%=request.getContextPath()%>/PageAccueilModeDeconnect">Retour à l'accueil</a></p>
  
   
 </form>

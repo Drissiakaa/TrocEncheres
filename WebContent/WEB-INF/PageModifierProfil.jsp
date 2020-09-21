@@ -4,14 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Mon profil</title>
+<title>PageCréerCompte</title>
 </head>
 <body>
 
 <%@ include file="entete.html"  %>
 <h2 style="text-align: center">Mon Profil</h2><br><br>
 <div class ="form">
-<form action="<%=request.getContextPath() %>/PageInsertionNouveauUtilisateur" method="post">
+<form action="<%=request.getContextPath() %>/PageMonProfil" method="post">
 
 <label>Pseudo :</label>&nbsp;&nbsp;
 	<input type="text" id="pseudo" name="pseudo">
@@ -54,8 +54,8 @@
 	<br><br>
 	<label>Crédit : </label>&nbsp;&nbsp;
 	<br><br>
-	<input type="submit" value="Enregistrer" onclick="/WEB-INF/PageConnexion.jsp">
-	<input type="button" value="Supprimer mon compte">
+	<input type="submit" value="Enregistrer"  onclick="<%=request.getContextPath() %>/PageMonProfil">
+	<input type="button" value="Supprimer mon compte" onclick="<%=request.getContextPath() %>/SupprimerUtilisateur">
 </form>
 </div>
  <%@ include file="piedDePage.html"  %>

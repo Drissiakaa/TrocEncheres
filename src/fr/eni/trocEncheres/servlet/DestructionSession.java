@@ -20,11 +20,11 @@ public class DestructionSession extends HttpServlet {
 	  protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	   HttpSession session = request.getSession(false);
 
-	   // Destroys the session for this user.
+	   // destruction de la session de l'utilisateur.
 	     if (session != null)
 	        session.invalidate();
 
-	   // Redirects back to the initial page.
+	   // retour page accuel mode non connecté
 	     this.getServletContext().getRequestDispatcher("/WEB-INF/PageAccueilDeconnect.jsp").forward(request, response);
 		}
 	  }

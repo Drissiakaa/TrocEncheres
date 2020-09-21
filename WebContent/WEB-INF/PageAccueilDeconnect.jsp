@@ -34,7 +34,7 @@
 
 <!-- formulaire -->
 <div class="form">
-<form name="filtres" action="" method="get">
+<form name="filtres" action="<%=request.getContextPath()%>ServletReceptionRecherchePageAccueil" method="post">
 <!-- filtres et liste déroulante catégorie -->
 <div>
 	<label>Filtres :</label><br>
@@ -69,12 +69,12 @@
                 <h5 class="card-title">Tasse pour développeur informatique </h5>
                 <p class="card-text">Gardez vos développeurs en mode focus on task.Grâce à elle plus besoin de pause café!.</p>
                 <p>
-                    Prix :  500 000 points br>
+                    Prix :  500 000 points <br>
                     Fin de l'enchère :
                     <br><br>
                     Vendeur : 
                 </p>
-                <a href=" <%=request.getContextPath()%>/AffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
+                <a href=" <%=request.getContextPath()%>/PageAffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
             </div>
         </div>
  
@@ -90,7 +90,7 @@
                     <br><br>
                     Vendeur : 
                 </p>
-              <a href=" <%=request.getContextPath()%>/AffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
+              <a href=" <%=request.getContextPath()%>/PageAffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -104,7 +104,7 @@
                     <br><br>
                     Vendeur : 
                 </p>
-               <a href=" <%=request.getContextPath()%>/AffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
+               <a href=" <%=request.getContextPath()%>/PageAffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
             </div>
         </div>
  
@@ -119,7 +119,7 @@
                     Fin de l'enchère :
                     <br><br>
                 <p>        Vendeur : </p>
-                <a href=" <%=request.getContextPath()%>/AffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
+                <a href=" <%=request.getContextPath()%>/PageAffichageProfilVendeur" class="btn btn-primary">Profil du vendeur</a>
             </div>
         </div>
     </div>

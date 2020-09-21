@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>trocEncheres</display-name>
+  <welcome-file-list>
+    <welcome-file>PageAccueilDeconnect.jsp</welcome-file>
+    <welcome-file>PageAcceuilModeDeconnect</welcome-file>
+     <welcome-file>MeConnecter</welcome-file>
+  </welcome-file-list>
+  
+  <servlet-mapping>
+    <servlet-name>PageCreerCompte</servlet-name>
+    <url-pattern>/PageCreerCompte</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PageCreerCompte</servlet-name>
+    <jsp-file>/WEB-INF/PageCreerCompte.jsp</jsp-file>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>PageAccueilConnect</servlet-name>
+    <jsp-file>/WEB-INF/PageAccueilConnect.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageAccueilConnect</servlet-name>
+    <url-pattern>/PageAccueilConnect</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+ <!--   <servlet>
+    <servlet-name>internationalisation</servlet-name>
+    <jsp-file>/WEB-INF/internationalisation.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>internationalisation</servlet-name>
+    <url-pattern>/internationalisation</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>PageProfil</servlet-name>
+    <jsp-file>/WEB-INF/PageProfil.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageProfil</servlet-name>
+    <url-pattern>/PageProfil</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>AffichageProfilVendeur</servlet-name>
+    <jsp-file>/WEB-INF/AffichageProfilVendeur.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AffichageProfilVendeur</servlet-name>
+    <url-pattern>/AffichageProfilVendeur</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+ 
+  
+  
+  <servlet>
+    <servlet-name>PageAccueilDeconnect</servlet-name>
+    <jsp-file>/WEB-INF/PageAccueilDeconnect.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageAccueilDeconnect</servlet-name>
+    <url-pattern>/PageAccueilDeconnect</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>NouvelleVente</servlet-name>
+    <jsp-file>/WEB-INF/NouvelleVente.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NouvelleVente</servlet-name>
+    <url-pattern>/NouvelleVente</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PageConnexion</servlet-name>
+    <jsp-file>/WEB-INF/PageConnexion.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>PageInscription</servlet-name>
+    <url-pattern>/PageInscription</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PageMonProfil</servlet-name>
+    <jsp-file>/WEB-INF/PageMonProfil.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageMonProfil</servlet-name>
+    <url-pattern>/PageMonProfil</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-name>PageModifierProfil</servlet-name>
+    <jsp-file>/WEB-INF/PageModifierProfil.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageModifierProfil</servlet-name>
+    <url-pattern>/PageModifierProfil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-name>PageVendreUnArticle</servlet-name>
+    <jsp-file>/WEB-INF/PageVendreUnArticle.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageVendreUnArticle</servlet-name>
+    <url-pattern>/PageVendreUnArticle</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>taglibs</servlet-name>
+    <jsp-file>/WEB-INF/taglibs.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>taglibs</servlet-name>
+    <url-pattern>/taglibs</url-pattern>
+  </servlet-mapping>
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+    </jsp-property-group>
+  </jsp-config>-->
+</web-app>

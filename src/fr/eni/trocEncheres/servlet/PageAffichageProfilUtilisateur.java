@@ -33,29 +33,21 @@ public class PageAffichageProfilUtilisateur extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String prenom = null;
-		String nom = null;
-		String pseudo = null;
-		String ville = null;
-		String rue = null;
-		String email = null;
-		String telephone =null;
-		String motDePasse=null;
-		String administrateur=null;
-		int credit = 100;
 		
-		request.getParameter(prenom);
-		request.getParameter(nom);
-		request.getParameter(pseudo);
-		request.getParameter(ville);
-		request.getParameter(rue);
-		request.getParameter(email);
-		request.getParameter(telephone);		
+		String pseudo =	request.getParameter("pseudo");
+		String nom =request.getParameter("nom");
+		String prenom = request.getParameter("prenom");
+		String email = request.getParameter("email");
+		String telephone =request.getParameter("telephone");	
+		String rue =request.getParameter("rue");
 		int codePostal = Integer.parseInt(request.getParameter("codePostal"));
-		
-		
+		String ville = request.getParameter("ville");
+		String motDePasse=request.getParameter("motDePasse");	
+		int credit = 100;		
+		String administrateur=null;
+			
 		UtilisateurManager um = new UtilisateurManager();
-		Utilisateur utilisateur=um.Insert(pseudo, prenom, email, telephone, rue, codePostal, ville, motDePasse,credit,administrateur);
+		Utilisateur utilisateur=um.Insert(pseudo,prenom, nom, email, telephone,rue, codePostal, ville, motDePasse,credit,administrateur);
 		
 		
 		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/PageConnexion.jsp");

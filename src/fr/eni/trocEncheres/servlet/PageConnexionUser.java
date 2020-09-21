@@ -31,7 +31,7 @@ public class PageConnexionUser extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		
 	}
 
 	/**
@@ -44,6 +44,7 @@ public class PageConnexionUser extends HttpServlet {
 
 		String login = request.getParameter("login");
 		String password = request.getParameter("password");
+		@SuppressWarnings("unused")
 		String pseudo = null;
 		UtilisateurManager um = new UtilisateurManager();
 		try {

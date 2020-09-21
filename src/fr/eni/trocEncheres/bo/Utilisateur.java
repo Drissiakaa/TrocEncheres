@@ -1,11 +1,11 @@
 package fr.eni.trocEncheres.bo;
 
 /**
- * application de cession d objets de seconde main sans échanges financiers. La
+ * Application de cession d objets de seconde main sans échanges financiers. La
  * valeur des articles est déterminée par un système d enchères basé sur un
- * nombre de points
+ * nombre de points acquis en "vendant" des objets
  * 
- * auteur : Drissia Kaabeche  et Aurélie Traquet campus ENI septembre 2020
+ * Auteurs : Drissia Kaabeche  et Aurélie Traquet campus ENI septembre 2020
  */
 import java.io.Serializable;
 
@@ -31,14 +31,20 @@ public class Utilisateur implements Serializable {
 	// avec les classes enchere et ArticleVendu
 	private Encheres enchere;
 	private ArticleVendu vente;
+	private String nom;
+	
 
-	// CONSTRUCTEUR1 SANS PARAMETRE
+	
 
+	
+
+	// constructeurs sans et avec paramètres
+	
 	public Utilisateur() {
-	};
 
-	// CONSTRUCTEUR 2 AVEC PARAMETRE
+		}
 
+	
 	/**
 	 * @param noUtilisateur
 	 * @param pseudo
@@ -52,10 +58,11 @@ public class Utilisateur implements Serializable {
 	 * @param credit
 	 */
 
-	public Utilisateur(int noUtilisateur, String pseudo, String prenom, String email, String telephone, String rue,
+	public Utilisateur(int noUtilisateur, String pseudo,String nom, String prenom, String email, String telephone, String rue,
 			int codePostale, String ville, String motDePasse, int credit) {
 		this.noUtilisateur = noUtilisateur;
 		this.pseudo = pseudo;
+		this.nom=nom;
 		this.prenom = prenom;
 		this.email = email;
 		this.telephone = telephone;
@@ -65,6 +72,14 @@ public class Utilisateur implements Serializable {
 		this.motDePasse = motDePasse;
 		this.credit = credit;
 	}
+   
+	
+	
+	// getters et setters
+	
+	public String getNom() {
+		return nom;
+	}
 
 	public Utilisateur(String pseudo, String password) {
 
@@ -72,7 +87,6 @@ public class Utilisateur implements Serializable {
 
 	public Utilisateur(String pseudo2, String prenom2, String email2, String telephone2, String rue2,
 			String codePostale2, String ville2, String motDePasse2, int credit2, String administrateur2) {
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -118,6 +132,20 @@ public class Utilisateur implements Serializable {
 	 */
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
+	}
+	
+	/**
+	 * @param nom
+	 *            the nom to set
+	 */
+	public void setNom(String string) {
+		
+	}
+	/**
+	 * @return the name
+	 */
+	public void getNom(String string) {
+		
 	}
 
 	/**
@@ -270,12 +298,14 @@ public class Utilisateur implements Serializable {
 		this.vente = vente;
 	}
 
-	// methode pour afficher les valeurs des attributs de la classe
+	// methode pour afficher les valeurs des attributs de la classe (état de la classe)
 	// par concaténation dans une chaine de caractère
 	@Override
 	public String toString() {
 		return "Utilisateur [noUtilisateur=" + noUtilisateur + ", pseudo=" + pseudo + ", credit=" + credit
 				+ ", enchere=" + enchere + ", vente=" + vente + "]";
 	}
+
+	
 
 }

@@ -4,14 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Page creer compte</title>
 </head>
 <body>
 <%@ include file="entete.html"  %>
 <h2 style="text-align: center">Mon Profil </h2>
 <br>
 <div class="form">
-   <form action="<%=request.getContextPath() %>/PageConnexionUser" method="post">
+   <form action="<%=request.getContextPath() %>/PageInscriptionUtilisateur" method="post">
 
 		    <label>Nom :&nbsp;&nbsp;&nbsp;&nbsp; </label><input type="text" id="nom" name="nom"> <br>
 		  
@@ -23,13 +23,13 @@
 		  	
 		   	<label>Email :&nbsp;&nbsp;&nbsp;&nbsp; </label><input type="email" id="email" name="email"><br>
 			
-			 <label>Téléphone :&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="tel" id="telephone" name="telephone"><br>
+			 <label>Téléphone :&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="telephone" name="telephone"><br>
 		    
 			<label>Rue :&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="rue" name="rue"><br>
 			
 			<label>Ville        :&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="ville" name="ville"><br>
 			
-			<label>Code postal  :&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="number" id="codepostal" name="codepostal"><br>
+			<label>Code postal  :&nbsp;&nbsp;&nbsp;&nbsp;</label><input  id="codePostal" name="codePostal"><br>
 		    <label>Mot de passe :&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="password" id="motdepasse" name="motdepasse">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Confirmation mot de passe :&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="password" id="confirmationMdp" name="confirmationMdp"><br>  <!-- &nbsp;&nbsp; -->  
 	        <br>
 	       <input type="submit" value="Créer">

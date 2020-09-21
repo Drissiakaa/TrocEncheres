@@ -63,7 +63,7 @@
 	<br>
 	<button type="button" class="btn btn-dark">Enregistrer </button>
     <button type="button" class="btn btn-dark">Annuler </button>
-    <button type="button" class="btn btn-dark">Annuler la vente</button>
+
 </form>
 <br>
 
